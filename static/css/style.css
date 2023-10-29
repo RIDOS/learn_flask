@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера заголовка */
+.header__container {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+
+/* Стили для меню */
+.header__content-menu {
+    list-style: none;
+    padding: 0;
+}
+
+/* Стили для элементов меню */
+.header__content-menu-item {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Стили для ссылок в меню */
+.header__content-menu-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Стили для ссылок при наведении */
+.header__content-menu-item a:hover {
+    text-decoration: underline;
+}
+
+
+.main__container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стили для контейнера формы обратной связи. */
+.contact__container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили для заголовка. */
+.contact__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact__header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Стили для формы. */
+.contact__form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили для полей ввода. */
+.contact__form-name,
+.contact__form-email,
+.contact__form-message {
+    margin-bottom: 15px;
+}
+
+.contact__form-name label,
+.contact__form-email label,
+.contact__form-message label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили для кнопки отправки. */
+.contact__form-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact__form-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для всплывающих сообщений. */
+.contact__message {
+    padding: 15px 0;
+}
+
+.alert {
+    &.alert-error {
+        background-color: #ff5757;
+        color: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #d13131;
+        border-radius: 5px;
+    }
+    
+    &.alert-success {
+        background-color: #4caf50;
+        color: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #388e3c;
+        border-radius: 5px;
+    }
+}
+
+
+/* Форма авторизации и регистрации */ 
+.auth__container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.auth__header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.auth__form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth__form-name,
+.auth__form-password {
+    margin-bottom: 20px;
+}
+
+.auth__form-name label,
+.auth__form-password label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.auth__form-name input,
+.auth__form-password input {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth__form-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth__form-submit:hover {
+    background-color: #0056b3;
+}

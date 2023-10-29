@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+    <div class="auth__container">
+        <div class="auth__header">
+            <h1>{{ title }}</h1>
+        </div>
+        <div class="auth__form">
+            <form action="/login" method="POST">
+                <div class="auth__form-name">
+                    <label for="username">Имя</label>
+                    <input type="text" name="username" id="name" required>
+                </div>
+                <div class="auth__form-password">
+                    <label for="password">Пароль</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <button class='auth__form-submit' type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
